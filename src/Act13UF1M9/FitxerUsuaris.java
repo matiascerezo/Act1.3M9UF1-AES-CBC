@@ -71,6 +71,8 @@ public class FitxerUsuaris {
             }
             fos.write(c.doFinal());
             System.out.println("Fichero cifrado!");
+            fis.close();
+            fos.close();
         } catch (Exception e) {
             System.err.println("Error al cifrar");
         }
@@ -108,6 +110,8 @@ public class FitxerUsuaris {
             }
             fos.write(c.doFinal());
             System.out.println("Fichero descifrado!");
+            fis.close();
+            fos.close();
         } catch (Exception e) {
             System.err.println("Error al descrifrar. " + "Error : " + e);
         }
